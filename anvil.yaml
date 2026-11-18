@@ -1,0 +1,16 @@
+allow_embedding: false
+dependencies: []
+metadata:
+  description: A fake restaurant website for testing PlanPlate.
+  title: Test Table Bistro
+name: Test Table Bistro
+package_name: Test_Table_Bistro
+runtime_options:
+  client_version: '3'
+  server_spec:
+    base: python314
+  version: 3
+services: []
+startup:
+  module: startup
+  type: module

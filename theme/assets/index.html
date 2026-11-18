@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Test Table Bistro</title>
+<style>
+  body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: #2b2420; background: #fbf7f1; line-height: 1.6; }
+  .test-note { background: #2b2420; color: #fbf7f1; text-align: center; font: 13px/1.4 system-ui, sans-serif; padding: 6px 16px; }
+  header { padding: 18px 16px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; align-items: center; max-width: 960px; margin: 0 auto; }
+  header strong { font-size: 22px; }
+  nav a { color: #2b2420; margin-left: 14px; font: 15px system-ui, sans-serif; }
+  .hero { background: #7a3b2e; color: #fbf7f1; text-align: center; padding: 70px 16px; }
+  .hero h1 { font-size: 40px; margin: 0 0 8px; }
+  .button { display: inline-block; background: #fbf7f1; color: #7a3b2e; padding: 10px 22px; border-radius: 4px; text-decoration: none; font: 600 16px system-ui, sans-serif; margin-top: 14px; }
+  section { max-width: 960px; margin: 0 auto; padding: 40px 16px; }
+  h2 { border-bottom: 2px solid #7a3b2e; padding-bottom: 4px; }
+  .dish { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px dotted #c9b9a6; padding: 6px 0; }
+  .dish small { display: block; color: #6b5d52; }
+  table { border-collapse: collapse; }
+  td { padding: 4px 18px 4px 0; }
+  .photos { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+  .photos div { aspect-ratio: 4 / 3; border-radius: 4px; display: flex; align-items: flex-end; padding: 8px; color: #fff; font: 14px system-ui, sans-serif; }
+  form { max-width: 520px; display: grid; gap: 12px; font-family: system-ui, sans-serif; }
+  label { display: grid; gap: 4px; font-size: 15px; }
+  input, select, textarea { font: inherit; padding: 8px; border: 1px solid #b8a898; border-radius: 4px; background: #fff; }
+  button { font: 600 16px system-ui, sans-serif; background: #7a3b2e; color: #fff; border: 0; border-radius: 4px; padding: 12px; cursor: pointer; }
+  #form-message { font-family: system-ui, sans-serif; background: #efe4d4; padding: 12px; border-radius: 4px; display: none; }
+  footer { text-align: center; padding: 30px 16px; font: 14px system-ui, sans-serif; color: #6b5d52; }
+</style>
+</head>
+<body>
+
+<div class="test-note">TEST SITE. Test Table Bistro is not a real restaurant. Nothing here is real.</div>
+
+<header>
+  <strong>Test Table Bistro</strong>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#hours">Hours</a>
+    <a href="#photos">Photos</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Test Table Bistro</h1>
+  <p>Simple seasonal food in a small room on a quiet street.</p>
+  <a class="button" href="#reserve">Book a table</a>
+</div>
+
+<section id="about">
+  <h2>About us</h2>
+  <p>We are a 40-seat neighbourhood bistro. The kitchen cooks what the market has that morning, the wine list is short,
+     and the bread is baked here every day. Walk-ins are welcome at the bar; for tables we recommend booking.</p>
+</section>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <h3>Starters</h3>
+  <div class="dish"><span>Onion soup<small>Gruyère toast</small></span><span>9</span></div>
+  <div class="dish"><span>Beet salad<small>Goat cheese, walnuts</small></span><span>11</span></div>
+  <div class="dish"><span>Chicken liver pâté<small>Pickles, grilled bread</small></span><span>10</span></div>
+  <h3>Mains</h3>
+  <div class="dish"><span>Steak frites<small>Peppercorn sauce</small></span><span>28</span></div>
+  <div class="dish"><span>Roast half chicken<small>Mashed potato, jus</small></span><span>24</span></div>
+  <div class="dish"><span>Mushroom risotto<small>Parmesan, herbs</small></span><span>21</span></div>
+  <h3>Desserts</h3>
+  <div class="dish"><span>Crème brûlée</span><span>8</span></div>
+  <div class="dish"><span>Chocolate tart<small>Vanilla cream</small></span><span>9</span></div>
+</section>
+
+<section id="hours">
+  <h2>Opening hours</h2>
+  <table>
+    <tr><td>Monday</td><td>Closed</td></tr>
+    <tr><td>Tuesday to Thursday</td><td>17:00 to 22:00</td></tr>
+    <tr><td>Friday and Saturday</td><td>17:00 to 23:00</td></tr>
+    <tr><td>Sunday</td><td>12:00 to 21:00</td></tr>
+  </table>
+</section>
+
+<section id="photos">
+  <h2>Photos</h2>
+  <div class="photos">
+    <div style="background:#9b5a3c">Dining room</div>
+    <div style="background:#5e6b45">Garden terrace</div>
+    <div style="background:#b07d48">Steak frites</div>
+    <div style="background:#4f4a63">Bar</div>
+  </div>
+</section>
+
+<section id="reserve">
+  <h2>Reserve a table</h2>
+  <form id="reservation-form">
+    <label>Name <input name="name" required></label>
+    <label>Email <input name="email" type="email" required></label>
+    <label>Phone <input name="phone" type="tel"></label>
+    <label>Date <input name="date" type="date" required></label>
+    <label>Time
+      <select name="time" required>
+        <option value="">Choose a time</option>
+        <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+        <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
+      </select>
+    </label>
+    <label>Guests
+      <select name="guests" required>
+        <option>1</option><option selected>2</option><option>3</option><option>4</option>
+        <option>5</option><option>6</option><option>7</option><option>8</option>
+      </select>
+    </label>
+    <label>Requests (optional) <textarea name="notes" rows="3"></textarea></label>
+    <button type="submit">Request booking</button>
+    <p id="form-message">Thanks! (This test form does not send anything yet.)</p>
+  </form>
+</section>
+
+<section id="contact">
+  <h2>Find us</h2>
+  <p>12 Test Street, Example City<br>Phone: 000-000-0000<br>Email: hello@example.com</p>
+</section>
+
+<footer>Test Table Bistro · a fake restaurant site for testing</footer>
+
+<script>
+  document.getElementById("reservation-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("form-message").style.display = "block";
+  });
+</script>
+</body>
+</html>
