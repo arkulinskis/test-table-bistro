@@ -58,37 +58,25 @@
 
 <section id="menu">
   <h2>Menu</h2>
-  <h3>Starters</h3>
-  <div class="dish"><span>Onion soup<small>Gruyère toast</small></span><span>9</span></div>
-  <div class="dish"><span>Beet salad<small>Goat cheese, walnuts</small></span><span>11</span></div>
-  <div class="dish"><span>Chicken liver pâté<small>Pickles, grilled bread</small></span><span>10</span></div>
-  <h3>Mains</h3>
-  <div class="dish"><span>Steak frites<small>Peppercorn sauce</small></span><span>28</span></div>
-  <div class="dish"><span>Roast half chicken<small>Mashed potato, jus</small></span><span>24</span></div>
-  <div class="dish"><span>Mushroom risotto<small>Parmesan, herbs</small></span><span>21</span></div>
-  <h3>Desserts</h3>
-  <div class="dish"><span>Crème brûlée</span><span>8</span></div>
-  <div class="dish"><span>Chocolate tart<small>Vanilla cream</small></span><span>9</span></div>
+  <div data-planplate-menu></div>
+  <script src="https://planplate-test.anvil.app/_/api/menu.js?r=test-table-bistro"></script>
 </section>
 
 <section id="hours">
   <h2>Opening hours</h2>
-  <table>
-    <tr><td>Monday</td><td>Closed</td></tr>
-    <tr><td>Tuesday to Thursday</td><td>17:00 to 22:00</td></tr>
-    <tr><td>Friday and Saturday</td><td>17:00 to 23:00</td></tr>
-    <tr><td>Sunday</td><td>12:00 to 21:00</td></tr>
-  </table>
+  <div data-planplate-hours></div>
+  <script src="https://planplate-test.anvil.app/_/api/hours.js?r=test-table-bistro"></script>
 </section>
 
 <section id="photos">
   <h2>Photos</h2>
-  <div class="photos">
-    <div style="background:#9b5a3c">Dining room</div>
-    <div style="background:#5e6b45">Garden terrace</div>
-    <div style="background:#b07d48">Steak frites</div>
-    <div style="background:#4f4a63">Bar</div>
-  </div>
+  <script src="https://planplate-test.anvil.app/_/theme/planplate-gallery.js"></script>
+  <planplate-gallery
+    feed-url="https://planplate-test.anvil.app/_/api/gallery/test-table-bistro"
+    theme="tilt" bg-style="spotlight" picture-style="none"
+    size="md" motion="rise" mobile-layout="bleed"
+    accent-color="#c9a56a" background-color="#1d1b18">
+  </planplate-gallery>
 </section>
 
 <section id="reserve">
