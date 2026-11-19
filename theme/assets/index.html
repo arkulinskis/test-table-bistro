@@ -80,31 +80,17 @@
 </section>
 
 <section id="reserve">
+  <script src="https://planplate-test.anvil.app/_/api/embed.js?r=test-table-bistro"></script>
   <h2>Reserve a table</h2>
-  <form id="reservation-form">
-    <label>Name <input name="name" required></label>
-    <label>Email <input name="email" type="email" required></label>
-    <label>Phone <input name="phone" type="tel"></label>
-    <label>Date <input name="date" type="date" required></label>
-    <label>Time
-      <select name="time" required>
-        <option value="">Choose a time</option>
-        <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
-        <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option><option>21:00</option>
-      </select>
-    </label>
-    <label>Guests
-      <select name="guests" required>
-        <option>1</option><option selected>2</option><option>3</option><option>4</option>
-        <option>5</option><option>6</option><option>7</option><option>8</option>
-      </select>
-    </label>
-    <label>Requests (optional) <textarea name="notes" rows="3"></textarea></label>
-    <button type="submit">Request booking</button>
-    <p id="form-message">Thanks! (This test form does not send anything yet.)</p>
-  </form>
+ <a href="#" data-planplate-open>Book a table</a>
+ <script src="https://planplate-test.anvil.app/_/api/embed.js?r=test-table-bistro"></script>
 </section>
-
+  
+  <section id="reserve2">
+    <h2>Reserve a table</h2>
+   <iframe src="https://planplate-test.anvil.app/#book/test-table-bistro" title="Reserve a table at Test Table Bistro" style="width:100%;max-width:560px;height:860px;border:0"></iframe>
+  </section>
+  
 <section id="contact">
   <h2>Find us</h2>
   <p>12 Test Street, Example City<br>Phone: 000-000-0000<br>Email: hello@example.com</p>
